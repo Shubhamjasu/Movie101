@@ -1,0 +1,529 @@
+[
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "genre": [
+        "Drama"
+      ],
+      "rating": 9.3,
+      "director": "Frank Darabont",
+      "actors": [
+        "Tim Robbins",
+        "Morgan Freeman"
+      ],
+      "plot": "Two imprisoned men bond over several years, finding solace and eventual redemption through acts of common decency.",
+      "poster": "data:image/jpeg;base64,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",
+      "trailer": "https://example.com/shawshank_redemption_trailer.mp4",
+      "runtime": 142,
+      "awards": "Nominated for 7 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$28.3 million",
+      "production": "Columbia Pictures",
+      "website": "http://www.warnerbros.com/movies/shawshank-redemption"
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "year": 1972,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "rating": 9.2,
+      "director": "Francis Ford Coppola",
+      "actors": [
+        "Marlon Brando",
+        "Al Pacino",
+        "James Caan"
+      ],
+      "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "poster": "https://media.themoviedb.org/t/p/w220_and_h330_face/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+      "trailer": "https://example.com/the_godfather_trailer.mp4",
+      "runtime": 175,
+      "awards": "Won 3 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$245.1 million",
+      "production": "Paramount Pictures",
+      "website": "https://www.paramountmovies.com/movies/the-godfather"
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "rating": 9,
+      "director": "Christopher Nolan",
+      "actors": [
+        "Christian Bale",
+        "Heath Ledger",
+        "Gary Oldman"
+      ],
+      "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xQPgyZOBhaz1GdCQIPf5A5VeFzO.jpg",
+      "trailer": "https://example.com/the_dark_knight_trailer.mp4",
+      "runtime": 152,
+      "awards": "Won 2 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$1.005 billion",
+      "production": "Warner Bros. Pictures",
+      "website": "https://www.warnerbros.com/movies/dark-knight"
+    },
+    {
+      "id": 4,
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "rating": 8.9,
+      "director": "Quentin Tarantino",
+      "actors": [
+        "John Travolta",
+        "Uma Thurman",
+        "Samuel L. Jackson"
+      ],
+      "plot": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpgf",
+      "trailer": "https://example.com/pulp_fiction_trailer.mp4",
+      "runtime": 154,
+      "awards": "Won 1 Oscar",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$213.9 million",
+      "production": "Miramax Films",
+      "website": "https://www.miramax.com/movie/pulp-fiction"
+    },
+    {
+      "id": 5,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "rating": 8.8,
+      "director": "Robert Zemeckis",
+      "actors": [
+        "Tom Hanks",
+        "Robin Wright",
+        "Gary Sinise"
+      ],
+      "plot": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold through the perspective of an Alabama man with an IQ of 75.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+      "trailer": "https://example.com/forrest_gump_trailer.mp4",
+      "runtime": 142,
+      "awards": "Won 6 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$677.9 million",
+      "production": "Paramount Pictures",
+      "website": "https://www.paramountmovies.com/movies/forrest-gump"
+    },
+    {
+      "id": 6,
+      "title": "Inception",
+      "year": 2010,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "rating": 8.8,
+      "director": "Christopher Nolan",
+      "actors": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Ellen Page"
+      ],
+      "plot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+      "trailer": "https://example.com/inception_trailer.mp4",
+      "runtime": 148,
+      "awards": "Won 4 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$829.9 million",
+      "production": "Warner Bros. Pictures",
+      "website": "https://www.warnerbros.com/movies/inception"
+    },
+    {
+      "id": 7,
+      "title": "The Matrix",
+      "year": 1999,
+      "genre": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "rating": 8.7,
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "actors": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Carrie-Anne Moss"
+      ],
+      "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg",
+      "trailer": "https://example.com/the_matrix_trailer.mp4",
+      "runtime": 136,
+      "awards": "Won 4 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$463.5 million",
+      "production": "Warner Bros. Pictures",
+      "website": "https://www.warnerbros.com/movies/matrix"
+    },
+    {
+      "id": 8,
+      "title": "The Lord of the Rings: The Return of the King",
+      "year": 2003,
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "rating": 8.9,
+      "director": "Peter Jackson",
+      "actors": [
+        "Elijah Wood",
+        "Viggo Mortensen",
+        "Ian McKellen"
+      ],
+      "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+      "trailer": "https://example.com/lotr_return_of_the_king_trailer.mp4",
+      "runtime": 201,
+      "awards": "Won 11 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$1.142 billion",
+      "production": "New Line Cinema",
+      "website": "https://www.lordoftherings.net/film/the-return-of-the-king"
+    },
+    {
+      "id": 9,
+      "title": "The Dark Knight Rises",
+      "year": 2012,
+      "genre": [
+        "Action",
+        "Thriller"
+      ],
+      "rating": 8.4,
+      "director": "Christopher Nolan",
+      "actors": [
+        "Christian Bale",
+        "Tom Hardy"
+      ],
+      "plot": "Eight years after the Joker's reign of anarchy, Batman is forced out of retirement to save Gotham City from the brutal guerrilla terrorist Bane.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
+      "trailer": "https://example.com/the_dark_knight_rises_trailer.mp4",
+      "runtime": 165,
+      "awards": "Nominated for 2 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$1.081 billion",
+      "production": "Warner Bros. Pictures",
+      "website": "http://www.warnerbros.com/movies/the-dark-knight-rises"
+    },
+    {
+      "id": 10,
+      "title": "Interstellar",
+      "year": 2014,
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ],
+      "rating": 8.6,
+      "director": "Christopher Nolan",
+      "actors": [
+        "Matthew McConaughey",
+        "Anne Hathaway"
+      ],
+      "plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+      "trailer": "https://example.com/interstellar_trailer.mp4",
+      "runtime": 169,
+      "awards": "Won 1 Oscar",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$677.5 million",
+      "production": "Paramount Pictures",
+      "website": "http://www.paramount.com/movies/interstellar"
+    },
+    {
+      "id": 11,
+      "title": "Fight Club",
+      "year": 1999,
+      "genre": [
+        "Drama"
+      ],
+      "rating": 8.8,
+      "director": "David Fincher",
+      "actors": [
+        "Brad Pitt",
+        "Edward Norton",
+        "Helena Bonham Carter"
+      ],
+      "plot": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+      "trailer": "https://example.com/fight_club_trailer.mp4",
+      "runtime": 139,
+      "awards": "Nominated for 1 Oscar",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$100.9 million",
+      "production": "20th Century Fox",
+      "website": "https://www.foxmovies.com/movies/fight-club"
+    },
+    {
+      "id": 12,
+      "title": "Gladiator",
+      "year": 2000,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "rating": 8.5,
+      "director": "Ridley Scott",
+      "actors": [
+        "Russell Crowe",
+        "Joaquin Phoenix",
+        "Connie Nielsen"
+      ],
+      "plot": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+      "trailer": "https://example.com/gladiator_trailer.mp4",
+      "runtime": 155,
+      "awards": "Won 5 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$460.5 million",
+      "production": "DreamWorks Pictures",
+      "website": "https://www.dreamworks.com/movies/gladiator"
+    },
+    {
+      "id": 13,
+      "title": "The Lord of the Rings: The Two Towers",
+      "year": 2002,
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "rating": 8.7,
+      "director": "Peter Jackson",
+      "actors": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Viggo Mortensen"
+      ],
+      "plot": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+      "trailer": "https://example.com/lotr_two_towers_trailer.mp4",
+      "runtime": 179,
+      "awards": "Won 2 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$951.2 million",
+      "production": "New Line Cinema",
+      "website": "https://www.lordoftherings.net/film/the-two-towers"
+    },
+    {
+      "id": 14,
+      "title": "The Silence of the Lambs",
+      "year": 1991,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": 8.6,
+      "director": "Jonathan Demme",
+      "actors": [
+        "Jodie Foster",
+        "Anthony Hopkins",
+        "Lawrence A. Bonney"
+      ],
+      "plot": "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+      "trailer": "https://example.com/silence_of_the_lambs_trailer.mp4",
+      "runtime": 118,
+      "awards": "Won 5 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$272.7 million",
+      "production": "Orion Pictures",
+      "website": "https://www.mgm.com/movies/the-silence-of-the-lambs"
+    },
+    {
+      "id": 15,
+      "title": "The Departed",
+      "year": 2006,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": 8.5,
+      "director": "Martin Scorsese",
+      "actors": [
+        "Leonardo DiCaprio",
+        "Matt Damon",
+        "Jack Nicholson"
+      ],
+      "plot": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nT97ifVT2J1yMQmeq20Qblg61T.jpg",
+      "trailer": "https://example.com/the_departed_trailer.mp4",
+      "runtime": 151,
+      "awards": "Won 4 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$289.8 million",
+      "production": "Warner Bros. Pictures",
+      "website": "https://www.warnerbros.com/movies/departed"
+    },
+    {
+      "id": 16,
+      "title": "Saving Private Ryan",
+      "year": 1998,
+      "genre": [
+        "Drama",
+        "War"
+      ],
+      "rating": 8.6,
+      "director": "Steven Spielberg",
+      "actors": [
+        "Tom Hanks",
+        "Matt Damon",
+        "Tom Sizemore"
+      ],
+      "plot": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1wY4psJ5NVEhCuOYROwLH2XExM2.jpg",
+      "trailer": "https://example.com/saving_private_ryan_trailer.mp4",
+      "runtime": 169,
+      "awards": "Won 5 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$482.3 million",
+      "production": "DreamWorks Pictures",
+      "website": "https://www.dreamworks.com/movies/saving-private-ryan"
+    },
+    {
+      "id": 17,
+      "title": "The Prestige",
+      "year": 2006,
+      "genre": [
+        "Drama",
+        "Mystery",
+        "Sci-Fi"
+      ],
+      "rating": 8.5,
+      "director": "Christopher Nolan",
+      "actors": [
+        "Christian Bale",
+        "Hugh Jackman",
+        "Scarlett Johansson"
+      ],
+      "plot": "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bdN3gXuIZYaJP7ftKK2sU0nPtEA.jpg",
+      "trailer": "https://example.com/the_prestige_trailer.mp4",
+      "runtime": 130,
+      "awards": "Nominated for 2 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$109.7 million",
+      "production": "Warner Bros. Pictures",
+      "website": "https://www.warnerbros.com/movies/prestige"
+    },
+    {
+      "id": 18,
+      "title": "Glory",
+      "year": 1989,
+      "genre": [
+        "Drama",
+        "History",
+        "War"
+      ],
+      "rating": 7.8,
+      "director": "Edward Zwick",
+      "actors": [
+        "Matthew Broderick",
+        "Denzel Washington",
+        "Cary Elwes"
+      ],
+      "plot": "Robert Gould Shaw leads the U.S. Civil War's first all-black volunteer company, fighting prejudices from both his own Union Army and the Confederates.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pGDzBjZvzmSCIEduQBfESLMiwtp.jpg",
+      "trailer": "https://example.com/glory_trailer.mp4",
+      "runtime": 122,
+      "awards": "Won 3 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$26.8 million",
+      "production": "TriStar Pictures",
+      "website": "https://www.sonypictures.com/movies/glory"
+    },
+    {
+      "id": 19,
+      "title": "The Avengers",
+      "year": 2012,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "rating": 8,
+      "director": "Joss Whedon",
+      "actors": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo"
+      ],
+      "plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+      "trailer": "https://example.com/the_avengers_trailer.mp4",
+      "runtime": 143,
+      "awards": "Nominated for 1 Oscar",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$1.518 billion",
+      "production": "Marvel Studios",
+      "website": "https://www.marvel.com/movies/the-avengers"
+    },
+    {
+      "id": 20,
+      "title": "The Lion King",
+      "year": 1994,
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Drama"
+      ],
+      "rating": 8.5,
+      "director": "Roger Allers, Rob Minkoff",
+      "actors": [
+        "Matthew Broderick",
+        "Jeremy Irons",
+        "James Earl Jones"
+      ],
+      "plot": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dzBtMocZuJbjLOXvrl4zGYigDzh.jpg",
+      "trailer": "https://example.com/the_lion_king_trailer.mp4",
+      "runtime": 88,
+      "awards": "Won 2 Oscars",
+      "country": "USA",
+      "language": "English",
+      "boxOffice": "$968.5 million",
+      "production": "Walt Disney Pictures",
+      "website": "https://movies.disney.com/the-lion-king"
+    }
+  ]
