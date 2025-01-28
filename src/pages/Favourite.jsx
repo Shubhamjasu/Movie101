@@ -1,9 +1,11 @@
-import React from 'react'
+import withData from '../components/withData'
+import DisplayCard from '../components/DisplayCard'
 
 export default function Favourite() {
+  const EnhancedDisplayCard = withData(DisplayCard)
   return (
     <div>
-      <h1>this is favorite page</h1>
+      <EnhancedDisplayCard isFav={true}></EnhancedDisplayCard>
     </div>
   )
 }

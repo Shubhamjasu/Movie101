@@ -1,9 +1,11 @@
-import React from 'react'
+import withData from '../components/withData'
+import DisplayCard from '../components/DisplayCard'
 
 export default function Watchlist() {
+  const EnhancedDisplayCard = withData(DisplayCard)
   return (
     <div>
-      <h1>this is watchlist</h1>
+      <EnhancedDisplayCard isWatchList={true}></EnhancedDisplayCard>
     </div>
   )
 }
