@@ -4,14 +4,26 @@ const withData = ( WrappedComponent) => {
   return (props) => {
     const [movieData, setMovieData] = useState(null)
     const [error, setError] = useState(null)
-
+    const { isFav, isWatchList } = props;
+    const [title, setTitle] = useState('Movie101 Top 20 Movies')
 
     const fetchMovieData = async() =>{
       try {
-        const response = data
+        let response = data
+        if(isFav){
+          setTitle('My Favourite Movies')
+          response = response.filter((movie)=>{
+            return movie.isFav
+          })
+        }
+        if(isWatchList){
+          setTitle('My Watchlist')
+          response = response.filter((movie)=>{
+            return movie.isWatchList
+          })
+        }
         // const data = await response.json()
         setMovieData(response)
-        console.log(response, " 1")
 
       } catch(error) {
         setError(error.message)
@@ -21,7 +33,7 @@ const withData = ( WrappedComponent) => {
       fetchMovieData();
     }, [])
 
-    return( <WrappedComponent {...props} error={error} movieData={movieData} />)
+    return( <WrappedComponent {...props} pageTitle={title} error={error} movieData={movieData} />)
   }
 }
 export default withData; 
