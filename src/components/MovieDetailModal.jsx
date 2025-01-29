@@ -14,9 +14,9 @@ export default function MovieDetailModal({ movie, isModalOpen, onModalClose }) {
 
 
     return (
-        <div className={`flex flex-col fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-900 text-slate-400 h-4/6 lg:w-3/6 md:w-4/6 min-w-72 max-sm:h-full max-sm:my-2 rounded-xl border-3 border-slate-200 p-8 gap-2 overflow-auto ` + `${isModalOpen ? '' : 'hidden'}`}>
+        <div className={`flex flex-col fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-900 text-slate-400 h-4/6 lg:h-auto lg:w-3/6 md:w-4/6 min-w-72 max-sm:h-5/6 max-sm:my-2 rounded-xl border-3 border-slate-200 p-8 gap-2 overflow-auto ` + `${isModalOpen ? '' : 'hidden'}`}>
             <div className='flex flex-row  max-sm:flex-col gap-4'>
-                <img className='bg-cover rounded w-28 h-28 ' src={movie.poster} alt={`${movie.title} Movie poster`} />
+                <img className='bg-cover rounded max-sm:w-full max-sm:h-44 w-28 h-28' src={movie.poster} alt={`${movie.title} Movie poster`} />
                 <div className='basis-3/4'>
                     <div className='text-lg text-slate-50'>
                         {`${movie.title}`}
@@ -54,7 +54,7 @@ export default function MovieDetailModal({ movie, isModalOpen, onModalClose }) {
             <div className='font-thin text-sm text-slate-300'>
                 <p>Language: <span className='text-blue-400'>{movie.language}</span> </p>
             </div>
-            <button className='transition delay-50 rounded-full w-4/5 m-2 h-10 self-center hover:border-blue-800 hover:border bg-slate-600 py-1 px-4 hover:bg-slate-200 text-blue-400'>Watch trailer</button>
+            <button className='transition delay-50 rounded-full w-4/5 m-2 mb-0 h-10 self-center hover:border-blue-800 hover:border bg-slate-600 py-1 px-4 hover:bg-slate-200 text-blue-400'>Watch trailer</button>
         </div>
     )
 }

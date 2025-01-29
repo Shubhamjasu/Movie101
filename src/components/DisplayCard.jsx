@@ -47,7 +47,7 @@ const DisplayCard = (props) => {
         </div>
       </div>
       {displayType != "list" ?
-        (<div className='w-4/5 py-4 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-8 '>
+        (<div className='w-4/5 py-4 grid lg:grid-cols-4 md:grid-cols-3 max-sm:grid-cols-1 gap-8 '>
           {movieData.map((movie, index) => <MovieCard className='shadow-lg w-40 h-80' movie={movie} key={movie.id} index={index+1} onDetailBtnClick={updateModal}></MovieCard>)}
         </div>)
         :
