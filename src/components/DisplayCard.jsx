@@ -4,10 +4,13 @@ import MovieList from './MovieList'
 import MovieCard from './MovieCard'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faList, faGrip} from '@fortawesome/free-solid-svg-icons'
+import MovieDetailModal from './MovieDetailModal'
 
 const DisplayCard = (props) => {
   const { movieData, error, pageTitle } = props;
   const [displayType, setDisplayType] = useState('grid')
+  const [modalMovieData, setModalMovieData] = useState({})
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   if (error) {
     return <div>Error: {error}</div>;
@@ -18,6 +21,15 @@ const DisplayCard = (props) => {
 
   const toggleDisplay = (type) => {
     setDisplayType(type)
+  }
+
+  const updateModal =( movie ) =>{
+    setIsModalOpen(true)
+    setModalMovieData(movie)
+  }
+
+  const onModalClose =( movie ) =>{
+    setIsModalOpen(false)
   }
 
   return (
@@ -35,13 +47,15 @@ const DisplayCard = (props) => {
         </div>
       </div>
       {displayType != "list" ?
-        (<div className='w-4/5 py-4 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-8'>
-          {movieData.map((movie, index) => <MovieCard className='shadow-lg w-40 h-80' movie={movie} key={movie.id} index={index+1}></MovieCard>)}
+        (<div className='w-4/5 py-4 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-8 '>
+          {movieData.map((movie, index) => <MovieCard className='shadow-lg w-40 h-80' movie={movie} key={movie.id} index={index+1} onDetailBtnClick={updateModal}></MovieCard>)}
         </div>)
         :
         (<div className='w-4/5 py-4 flex flex-col gap-6'>
-          {movieData.map((movie, index) => <MovieList className='shadow-lg w-full h-60 sm:h-30' movie={movie} key={movie.id} index={index+1}></MovieList>)}
-        </div>)}
+          {movieData.map((movie, index) => <MovieList className='shadow-lg w-full h-60 sm:h-30' movie={movie} key={movie.id} index={index+1} onDetailBtnClick={updateModal}></MovieList>)}
+        </div>)
+        }
+        <MovieDetailModal isModalOpen={isModalOpen} movie={modalMovieData} onModalClose={onModalClose}></MovieDetailModal>
     </div>
   )
 }
