@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Shubhamjasu.github.io/Movie101",
   "name": "movie101",
   "private": true,
   "version": "0.0.0",
@@ -8,9 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" 
+    "preview": "vite preview"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
