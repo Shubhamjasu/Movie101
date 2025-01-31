@@ -10,7 +10,7 @@ export default function MovieCard({ movie, index, onDetailBtnClick}) {
   
   return (
     <div className='border-2 rounded-xl flex flex-col flex-auto relative'>
-      <img className='bg-cover rounded-t-xl' src={movie.poster} alt={`${movie.title} Movie poster`} />
+      <img className='bg-cover rounded-t-xl object-fill' src={movie.poster} alt={`${movie.title} Movie poster`} />
       <div className='flex items-center'>
         <FontAwesomeIcon icon={faStar}  className='text-yellow-300 text-lg pl-2'/> 
         <div className='pt-1 px-2'>{movie.rating}</div> 

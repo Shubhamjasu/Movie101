@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faBars} from '@fortawesome/free-solid-svg-icons'
+import {faBars, faBookmark, faHeart, faSearch} from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -16,10 +16,10 @@ export default function Navbar() {
         </div>
         <div className="basis-2/3 flex max-sm:hidden justify-end">
           <NavLink to="/watchlist" className='mx-3'>
-            My Watchlist
+          <FontAwesomeIcon className="mr-1"  icon={faBookmark} />Watchlist
           </NavLink>
-          <NavLink to="/favorite" >Favourite</NavLink>
-          <button className='ml-3 btn bg-red-400 text-white px-2 rounded-md'>Search</button>
+          <NavLink className='mx-3' to="/favorite" ><FontAwesomeIcon className="mr-1"  icon={faHeart} />Favourite</NavLink>
+          <button className='ml-3 btn text-white px-2 rounded-md'><FontAwesomeIcon icon={faSearch}  className=''/></button>
         </div>
       </div>
       <div className={`${isMenuOpen ? "flex" : "hidden"} md:hidden lg:hidden w-4/5 flex-col text-sm pb-2 justify-start`}>
@@ -27,6 +27,9 @@ export default function Navbar() {
         <NavLink onClick={() => setIsMenuOpen(!isMenuOpen)} to="/favorite" >Favourite</NavLink>
         <div>Search</div>
       </div>
+      {/* <div className="w-4/5 mb-2 flex justify-between">
+        <input className='btn w-full h-12 bg-white text-white px-2 rounded-md text-xl' placeholder="Type to Search Movie ..." />
+      </div> */}
     </div>
   );
 }

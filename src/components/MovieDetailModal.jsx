@@ -54,7 +54,7 @@ export default function MovieDetailModal({ movie, isModalOpen, onModalClose }) {
             <div className='font-thin text-sm text-slate-300'>
                 <p>Language: <span className='text-blue-400'>{movie.language}</span> </p>
             </div>
-            <button className='transition delay-50 rounded-full w-4/5 m-2 mb-0 h-10 self-center hover:border-blue-800 hover:border bg-slate-600 py-1 px-4 hover:bg-slate-200 text-blue-400'>Watch trailer</button>
+            <button className='transition delay-50 rounded-full w-4/5 m-2 mb-0 h-10 self-center hover:border-blue-800 hover:border bg-slate-600 py-1 px-4 hover:bg-slate-200 text-blue-400 text-lg'>Watch trailer</button>
         </div>
     )
 }
