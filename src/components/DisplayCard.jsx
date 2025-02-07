@@ -13,10 +13,10 @@ const DisplayCard = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <div className='flex justify-center items-center'><p className='w-4/5 h-screen text-6xl flex justify-center items-center text-red-500'>{error}</p></div>;
   }
   if (!movieData) {
-    return <div>Loading...</div>;
+    return <div className='flex justify-center items-center'><p className='w-4/5 h-screen text-6xl flex justify-center items-center text-blue-500'>Loading ...</p></div>;
   }
 
   const toggleDisplay = (type) => {
@@ -59,4 +59,4 @@ const DisplayCard = (props) => {
     </div>
   )
 }
-export default DisplayCard;
+export default React.memo(DisplayCard);
